@@ -1,0 +1,12 @@
+[Unit]
+Description=Nginx 1 HW-4
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/nginx -g 'daemon on; master_process on;' -c /home/vdolhushyn/hw-4/nginx1/nginx1.conf
+	ExecReload=/usr/sbin/nginx -s reload
+ExecStop=/usr/sbin/nginx -s quit
+PIDFile=/home/vdolhushyn/hw-4/nginx1/tmp/nginx1.pid
+
+[Install]
+WantedBy=multi-user.target

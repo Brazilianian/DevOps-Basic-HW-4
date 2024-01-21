@@ -1,0 +1,1 @@
+2024/01/21 15:43:27 [error] 1386#1386: *1 open() "/usr/share/nginx/html2/favicon.ico" failed (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8082", referrer: "http://localhost:8082/"

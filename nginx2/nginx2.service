@@ -1,0 +1,12 @@
+[Unit]
+Description=Nginx 2 HW-4
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/nginx -g 'daemon on; master_process on;' -c /home/vdolhushyn/hw-4/nginx2/nginx2.conf
+ExecReload=/usr/sbin/nginx -s reload
+ExecStop=/usr/sbin/nginx -s quit
+PIDFile=/home/vdolhushyn/hw-4/nginx2/tmp/nginx2.pid
+
+[Install]
+WantedBy=multi-user.target
